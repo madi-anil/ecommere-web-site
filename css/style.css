@@ -6,6 +6,47 @@
     box-sizing: border-box;
     font-family: "League Spartan", sans-serif;
 }
+:root {
+  --bg: #f7f6f2;
+  --text: #28251d;
+  --surface: #ffffff;
+  --border: #d4d1ca;
+}
+
+[data-theme="dark"] {
+  --bg: #171614;
+  --text: #cdccca;
+  --surface: #1c1b19;
+  --border: #393836;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s ease;
+  font-family: sans-serif;
+}
+
+.theme-btn {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  padding: 12px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
 
 /*
 h1, h2, h3, h4, h5, h6, p , a, span, div standard styles
